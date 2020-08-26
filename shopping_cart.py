@@ -26,6 +26,7 @@ def clear_cart():
 # show all items of cart.
 def show():
     if cart:
+        print('Shopping cart:')
         for index, item in enumerate(cart, start=1):  # accessing index & item
             print(f'{index}. {item}')
     else:
